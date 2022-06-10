@@ -1,6 +1,3 @@
-from itertools import count
-
-
 def naive_search(long: str, short: str):
     count = 0
     for i in range(len(long)):
