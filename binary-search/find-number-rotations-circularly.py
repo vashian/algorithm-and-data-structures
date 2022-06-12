@@ -9,7 +9,7 @@ def find_rotation_count(nums: list) -> int:
 
         mid = (left + right) // 2
 
-        next = (mid + 1) % len(nums)
+        next = (mid + 1) % len(nums)  # % is for last element
         prev = (mid - 1 + len(nums)) % len(nums)
 
         if nums[mid] <= nums[next] and nums[mid] <= nums[prev]:
