@@ -8,7 +8,7 @@ def merge(arr1: list, arr2: list) -> list:
             result.append(arr1[arr1Index])
             arr1Index += 1
 
-        elif arr2[arr2Index] < arr1[arr1Index]:
+        else:
             result.append(arr2[arr2Index])
             arr2Index += 1
 
@@ -26,7 +26,7 @@ def merge(arr1: list, arr2: list) -> list:
 if __name__ == "__main__":
 
     arr1 = [1, 10, 50]
-    arr2 = [2, 14, 99, 100]
+    arr2 = [2, 10, 99, 100]
 
     result = merge(arr1, arr2)
 
